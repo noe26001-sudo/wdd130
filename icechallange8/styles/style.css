@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: rgb(120, 96, 64);
+}
+
+#formContainer {
+    position: relative;
+    margin: 12px auto;
+    background-color: white;
+    max-width: 35%;
+    display: grid;
+    grid-template-rows: 200px auto;
+    text-align: center;
+    border-radius: 5%;
+    border: 10px solid #0D2E7C;
+    overflow: hidden;
+    gap: 12px;
+    h1 {
+        padding-top: 7%;
+        background-image: url("../images/jesus_feeds_5000.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-family: Times, serif;
+        text-shadow: 2px 2px 4px black;
+        font-size:  2em;
+        strong {
+            font-size: 1.2em;
+            font-weight: bolder;
+         }
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    #myForm {
+        font-weight: bold;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        padding: 20px;
+        label {
+            align-self: center;
+        }
+        section {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+        button[type="submit"] {
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+    }
+    #Scripture {
+            display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+}
+
+
+#closeBtn {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 10;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+    width: 30px;
+    border-radius: 5px;
+}

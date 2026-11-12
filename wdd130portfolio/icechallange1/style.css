@@ -1,0 +1,30 @@
+
+
+.mainimg {
+    }
+
+header {
+    grid-template-columns: 200px auto;
+    display: grid;
+    background-color: aqua;
+}
+main {
+    background-color: bisque;
+}
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 15px;
+}
+
+footer {
+    background-color: aqua;
+    text-align: center;
+    height: max-content;
+}
+img {
+    width: 100%;
+    
+}

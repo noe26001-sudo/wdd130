@@ -1,0 +1,22 @@
+body {
+    background-color: bisque;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 60px 60px;
+    text-align: center;
+}
+header {
+    grid-column: 2/3;
+    grid-row: 1;
+    background-color: beige;
+    text-align: center;
+}
+footer{
+    grid-column: 1/-1;
+    background-color: beige;
+}
+img {
+    width: 100%;
+}

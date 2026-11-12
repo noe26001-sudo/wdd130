@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --primary-color: #1E293B;
+  --secondary-color: #0D9488;
+  --accent1-color: #F59E0B;
+  --background-color: #F8FAFC;
+  --surface-color: #FFFFFF;
+  --text-color: #334155;
+
+  --heading-font: 'Poppins', Arial, sans-serif;
+  --paragraph-font: 'Open Sans', Helvetica, sans-serif;
+
+  --headline-color-on-white: #1E293B;
+  --headline-color-on-color: #FFFFFF;
+  --paragraph-color-on-white: #334155;
+  --paragraph-color-on-color: #FFFFFF;
+  --paragraph-background-color: #1E293B;
+  --nav-link-color: #FFFFFF;
+  --nav-background-color: #0D9488;
+  --nav-hover-link-color: #1E293B;
+  --nav-hover-background-color: #F59E0B;
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--primary-color);
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--primary-color);
+}
+
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+  line-height: 1.6;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+  border-collapse: collapse;
+  background-color: var(--surface-color);
+}
+
+.colors th {
+  background-color: var(--primary-color);
+  color: var(--headline-color-on-color);
+  padding: 0.75em;
+}
+
+.colors td {
+  padding: 0.75em;
+  border: 1px solid #cbd5e1;
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  color: #FFFFFF;
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+  color: #1E293B;
+}
+
+.background {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.surface {
+  background-color: var(--surface-color);
+  color: var(--text-color);
+}
+
+.text {
+  background-color: var(--text-color);
+  color: #FFFFFF;
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  padding: 10px 1em;
+  min-width: 120px;
+  text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.sitemap {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+
+.sitemap > div {
+  text-align: center;
+}
+
+.sm-home {
+  grid-area: home;
+  background-color: var(--secondary-color);
+  color: #FFFFFF;
+  line-height: 3em;
+}
+
+.sm-page2 {
+  grid-area: page2;
+  background-color: var(--secondary-color);
+  color: #FFFFFF;
+  line-height: 3em;
+}
+
+.sm-page3 {
+  grid-area: page3;
+  background-color: var(--secondary-color);
+  color: #FFFFFF;
+  line-height: 3em;
+}
+
+.top {
+  grid-area: top;
+  border-left: 1px solid var(--primary-color);
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid var(--primary-color);
+  border-left: 1px solid var(--primary-color);
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid var(--primary-color);
+  border-right: 1px solid var(--primary-color);
+}

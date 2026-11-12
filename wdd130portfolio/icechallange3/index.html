@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <div class="sub-heading">BYU-IDAHO SPEECHES</div>
+        <div class="accent-bar"></div>
+        <h2 class="section-title">Favorite Devotionals</h2>
+        <p class="section-desc">Explore messages shared with the BYU-Idaho community.</p>
+
+        <table class="devo-table">
+          <thead>
+            <tr>
+              <th>Speaker</th>
+              <th>Title</th>
+              <th>Location</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Elder Gerrit W Gong</td>
+              <td>The Lilies of the Field</td>
+              <td>Rexburg, Idaho</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Brother Gabriel W Reid</td>
+              <td>Fumbling is not Failing</td>
+              <td>Rexburg, Idaho</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>President Alvin F Meredith III</td>
+              <td>Begin with the End in Mind</td>
+              <td>Rexburg, Idaho</td>
+              <td>2024</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr class="divider" />
+
+        <h2 class="section-title">Add a Devotional</h2>
+        <p class="section-desc">Share another message with the collection.</p>
+
+        <form class="devo-form" action="#" method="post">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="speaker">Speaker name</label>
+              <input type="text" id="speaker" name="speaker" />
+            </div>
+            <div class="form-group">
+              <label for="title">Devotional title</label>
+              <input type="text" id="title" name="title" />
+            </div>
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input type="text" id="location" name="location" />
+            </div>
+            <div class="form-group">
+              <label for="year">Year</label>
+              <input type="text" id="year" name="year" />
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="submit-btn">Add devotional</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

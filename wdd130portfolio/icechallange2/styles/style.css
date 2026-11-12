@@ -1,0 +1,60 @@
+body {
+    font-family: Arial;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* 1. Crucial: Gives the body full height so vertical centering works */
+    margin: 0;         /* 2. Removes default browser margins */
+    background-color: #e8eced;
+
+    main {
+        border: 5px solid black; /* 3. Fixed: Added 'solid' style so the border actually renders */
+        text-align: center;
+        color: #e8eced;
+        border-radius: 50px;
+        width: 90%;
+        background-image: url("../images/christus.webp");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+        aspect-ratio: 3 / 2;
+        img {
+            border: #e8eced solid 10px;
+            border-radius: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            object-position: center;
+            height: 100%;
+            margin: 10px 20px;
+        }
+        img:hover {
+            border-color: blue;
+        }
+        .Grid1 {
+            display: grid;
+            grid-template-columns: auto;
+            .Grid2 {
+                margin-bottom: 30px;
+                height: 200px;
+                img {
+                    margin: 0 20px;
+                    height: 70%;
+                }
+                .mainimg {
+                    height: 100%;
+                }
+            }
+            .Grid3{
+                margin: 0 300px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                img {
+                    margin: 20px auto;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
